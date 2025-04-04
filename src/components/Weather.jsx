@@ -1,8 +1,8 @@
 import React from 'react'
 import { BiSearch } from 'react-icons/bi'
 import { BsCloud } from 'react-icons/bs'
-/* import { FaLocationDot, FaWind } from 'react-icons/fa' */
- import {FaWind } from 'react-icons/fa' 
+import { FaWind } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
 
 function Weather() {
   return (
@@ -12,11 +12,11 @@ function Weather() {
                 <div className='location'>
                     <h3>New York - USA</h3>
                 </div>
-                <div className='contion'>
+                <div className='condition'>
                     <h1>Overcast</h1>
                 </div>
             </div>
-            <div className='wetaher_hours'>
+            <div className='weather_hours'>
                 <div className='hour_card'>
                     <div className='hour_time'>
                         <p>09:00</p>
@@ -32,7 +32,7 @@ function Weather() {
         </div>
         <div className='side_section'>
             <div className='search_box'>
-                {/* <FaLocationDot className='icon' /> */}
+                <FaLocationDot className='icon' />
                 <input type="text" placeholder='New York' />
                 <BiSearch className='icon' />
             </div>
