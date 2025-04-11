@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-const API_KEY = '9310a0427d494372b03180547250404'
+const API_KEY = 'fea231f27d6846bca30213614251104'
 const BASE_URL = 'http://api.weatherapi.com/v1'
 
 
@@ -22,7 +22,7 @@ const weatherSlice = createSlice({
     },
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(fetchForecastByCity, (state, action) => {
+        builder.addCase(fetchForecastByCity.fulfilled, (state, action) => {
             state.forecast = action.payload
         })
     }
